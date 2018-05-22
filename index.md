@@ -8,4 +8,5 @@ permalink: '/'
 order: 1
 title: Home
 ---
-## Please come celebrate with us!
+## Sunday, September 2nd, 2018
+## Roger Williams Botanical Center, Providence, Rhode Island
