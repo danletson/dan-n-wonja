@@ -3,10 +3,11 @@
 // Define defaults for each variable.
 
 @font-face {
-    font-family: "Lydian";
-    src: url("./assets/lydian-btt.ttf") format("ttf");
+    font-family: 'Lydian';
+    src: url('../assets/lydian-bt-webfont.woff2') format('woff2'),
+         url('../assets/lydian-bt-webfont.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 
 $base-font-family: "Lydian", sans-serif !default;
