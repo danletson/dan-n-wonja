@@ -181,6 +181,14 @@ body{
     margin-bottom: 8rem;
   }
 }
+
+
+.photo{
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
 @include media-query($on-palm) {
   .splash-container{
     margin-top: 0;
