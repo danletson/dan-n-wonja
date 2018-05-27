@@ -7,20 +7,35 @@
 }
 
 body{
+  padding: 0;
+  margin: 0;
   background-repeat: no-repeat;
-  background-size: cover;
   background-attachment: fixed;
-  position:relative;
 }
 
 .overlay{
-  position: absolute;
   left: 0;
   top: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.6);
-  width: 100%;
+  position: fixed;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  &:after{
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+  }
+  @include media-query($on-palm) {
+    height: 1024px;
+    background-attachment:local;
+  }
 }
 
 .page-wrap{
@@ -163,7 +178,7 @@ body{
       flex-basis: 15%;
     }
     .center{
-      flex-basis: 70%;
+      // flex-basis: 70%;
       img{
         width: 90%;
       }
